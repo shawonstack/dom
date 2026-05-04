@@ -12,3 +12,11 @@ ol {
   color: blue;
   font-weight: 700;
 }
+
+#btn-yellow {
+  margin: 20px;
+  padding: 30px;
+  color: blue;
+  border-radius: 20px;
+  background-color: #70704a;
+}
