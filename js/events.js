@@ -18,3 +18,8 @@ const btnSubscribe = document.getElementById('subscribe');
 btnSubscribe.onclick = function subs() {
   document.body.style.backgroundColor = '#168277';
 };
+document
+  .getElementById('btn-purple')
+  .addEventListener('click', function purple() {
+    document.body.style.backgroundColor = '#B04EDE';
+  });
