@@ -51,3 +51,11 @@ document
     userLoginEl.innerText = 'user login successfully.';
     userLoginEl.style.color = 'green';
   });
+
+document.getElementById('login-btn').addEventListener('click', function () {
+  const inputName = document.getElementById('input-id');
+  const name = inputName.value;
+  console.log('name:', name);
+  const pName = document.getElementById('name-p');
+  pName.innerText = name;
+});
