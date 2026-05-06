@@ -57,7 +57,20 @@
 // `;
 // mainSection.appendChild(visitPlaces);
 
-const listItem = document.getElementsByClassName('list-item');
-for (const list of listItem) {
-  console.log((list.style.color = 'red'));
-}
+// const listItem = document.getElementsByClassName('list-item');
+// listItem.style.color = 'red';
+
+document.getElementById('btn-count').addEventListener('click', function () {
+  const countP = document.getElementById('count');
+  let current = parseInt(countP.innerText);
+  current++;
+  countP.innerText = current;
+});
+
+// -------------------------------
+document.getElementById('btn-double').addEventListener('click', function () {
+  const doubleP = document.getElementById('count-double');
+  let currentP = parseInt(doubleP.innerText);
+  currentP += 2;
+  doubleP.innerText = currentP;
+});
