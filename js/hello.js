@@ -56,3 +56,8 @@
 // </ul>
 // `;
 // mainSection.appendChild(visitPlaces);
+
+const listItem = document.getElementsByClassName('list-item');
+for (const list of listItem) {
+  console.log((list.style.color = 'red'));
+}

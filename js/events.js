@@ -59,3 +59,12 @@ document.getElementById('login-btn').addEventListener('click', function () {
   const pName = document.getElementById('name-p');
   pName.innerText = name;
 });
+
+document.getElementById('submite-name').addEventListener('click', function () {
+  const inputField = document.getElementById('input-name-i');
+  const name = inputField.value;
+  console.log('name:', name);
+  const tagName = document.getElementById('p-tag-name');
+  tagName.innerText = name;
+  tagName.style.color = 'red';
+});
