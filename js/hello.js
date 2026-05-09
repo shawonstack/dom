@@ -130,3 +130,25 @@ items.forEach(function (item) {
   newList.appendChild(li);
 });
 document.body.appendChild(newList);
+
+const newImage = document.createElement('img');
+newImage.src = 'https://via.placeholder.com/150';
+newImage.alt = 'Placeholder Image';
+document.body.appendChild(newImage);
+newImage.style.border = '1px solid black';
+// new div make and make elementsbuttons
+const newDiv2 = document.createElement('div');
+newDiv2.innerHTML = `
+  <h2>Color Changer</h2>
+  <button class="color-btn" id="red">Red</button>
+  <button class="color-btn" id="blue">Blue</button>
+  <button class="color-btn" id="green">Green</button>
+  <button class="color-btn" id="yellow">Yellow</button>
+`;
+document.body.appendChild(newDiv2);
+const colorButtons = newDiv2.querySelectorAll('.color-btn');
+colorButtons.forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    document.body.style.backgroundColor = btn.id;
+  });
+});
