@@ -101,3 +101,8 @@ const newH1 = document.createElement('h1');
 newH1.innerText = 'Hello, World!';
 document.body.appendChild(newH1);
 newH1.style.color = 'red';
+
+const newP = document.createElement('p');
+newP.innerText = 'This is a new paragraph added by JavaScript.';
+document.body.appendChild(newP);
+newP.style.fontSize = '20px';
