@@ -2,7 +2,7 @@
   text-align: center;
   margin-top: 25px;
 }
-#menu li {
+#menu button {
   display: inline-block;
   width: 100px;
   height: 100px;

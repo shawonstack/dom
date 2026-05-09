@@ -74,18 +74,25 @@
 //   currentP += 2;
 //   doubleP.innerText = currentP;
 // });
-document.getElementById('red').addEventListener('click', function () {
-  document.body.style.backgroundColor = '#e55d5d';
-});
+// document.getElementById('red').addEventListener('click', function () {
+//   document.body.style.backgroundColor = '#e55d5d';
+// });
 
-document.getElementById('blue').addEventListener('click', function () {
-  document.body.style.backgroundColor = '#5d9ee5';
-});
+// document.getElementById('blue').addEventListener('click', function () {
+//   document.body.style.backgroundColor = '#5d9ee5';
+// });
 
-document.getElementById('green').addEventListener('click', function () {
-  document.body.style.backgroundColor = '#5de57b';
-});
+// document.getElementById('green').addEventListener('click', function () {
+//   document.body.style.backgroundColor = '#5de57b';
+// });
 
-document.getElementById('yellow').addEventListener('click', function () {
-  document.body.style.backgroundColor = '#e5e55d';
+// document.getElementById('yellow').addEventListener('click', function () {
+//   document.body.style.backgroundColor = '#e5e55d';
+// });
+let buttons = document.querySelectorAll('.color-btn');
+
+buttons.forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    document.body.style.backgroundColor = btn.id;
+  });
 });
