@@ -60,17 +60,32 @@
 // const listItem = document.getElementsByClassName('list-item');
 // listItem.style.color = 'red';
 
-document.getElementById('btn-count').addEventListener('click', function () {
-  const countP = document.getElementById('count');
-  let current = parseInt(countP.innerText);
-  current++;
-  countP.innerText = current;
+// document.getElementById('btn-count').addEventListener('click', function () {
+//   const countP = document.getElementById('count');
+//   let current = parseInt(countP.innerText);
+//   current++;
+//   countP.innerText = current;
+// });
+
+// // -------------------------------
+// document.getElementById('btn-double').addEventListener('click', function () {
+//   const doubleP = document.getElementById('count-double');
+//   let currentP = parseInt(doubleP.innerText);
+//   currentP += 2;
+//   doubleP.innerText = currentP;
+// });
+document.getElementById('red').addEventListener('click', function () {
+  document.body.style.backgroundColor = '#e55d5d';
 });
 
-// -------------------------------
-document.getElementById('btn-double').addEventListener('click', function () {
-  const doubleP = document.getElementById('count-double');
-  let currentP = parseInt(doubleP.innerText);
-  currentP += 2;
-  doubleP.innerText = currentP;
+document.getElementById('blue').addEventListener('click', function () {
+  document.body.style.backgroundColor = '#5d9ee5';
+});
+
+document.getElementById('green').addEventListener('click', function () {
+  document.body.style.backgroundColor = '#5de57b';
+});
+
+document.getElementById('yellow').addEventListener('click', function () {
+  document.body.style.backgroundColor = '#e5e55d';
 });

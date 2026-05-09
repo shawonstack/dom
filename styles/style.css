@@ -1,22 +1,27 @@
-ul {
-  color: blue;
+#menu ul {
+  text-align: center;
+  margin-top: 25px;
 }
-ol {
-  background-color: rgb(202, 229, 229);
-
-  margin: 4px;
-  padding: 5px;
-  border-radius: 3px;
+#menu li {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  border-radius: 50%;
+  border: 2px solid black;
+  box-shadow: 0 0 5px black;
+  cursor: pointer;
+  line-height: 100px;
 }
-.shawon .visit {
-  color: blue;
-  font-weight: 700;
+#red {
+  background-color: #e55d5d;
 }
-
-#btn-yellow {
-  margin: 20px;
-  padding: 30px;
-  color: blue;
-  border-radius: 20px;
-  background-color: #70704a;
+#blue {
+  background-color: #9898eb;
+}
+#green {
+  background-color: #6ee96e;
+}
+#yellow {
+  background-color: #dddd51;
 }
