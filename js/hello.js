@@ -106,3 +106,27 @@ const newP = document.createElement('p');
 newP.innerText = 'This is a new paragraph added by JavaScript.';
 document.body.appendChild(newP);
 newP.style.fontSize = '20px';
+
+const newButton = document.createElement('button');
+newButton.innerText = 'Click Me';
+document.body.appendChild(newButton);
+newButton.addEventListener('click', function () {
+  alert('Button was clicked!');
+});
+
+const newDiv = document.createElement('div');
+newDiv.innerHTML = `
+  <h2>New Section</h2>
+  <p>This section was created dynamically using JavaScript.</p>
+`;
+document.body.appendChild(newDiv);
+newDiv.style.border = '1px solid black';
+newDiv.style.padding = '10px';
+const newList = document.createElement('ul');
+const items = ['Item 1', 'Item 2', 'Item 3'];
+items.forEach(function (item) {
+  const li = document.createElement('li');
+  li.innerText = item;
+  newList.appendChild(li);
+});
+document.body.appendChild(newList);
