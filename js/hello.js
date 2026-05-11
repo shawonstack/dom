@@ -5,11 +5,30 @@
 //   newItem.style.color = 'red';
 // }
 
-let buttonName = document
-  .getElementById('btn-container')
-  .addEventListener('click', function () {
-    let heading = document.getElementById('h1-container');
-    document.body.style.backgroundColor = 'red';
-    heading.style.color = 'white';
-    heading.innerText = 'heading color goes to white';
-  });
+let creatSection = document.createElement('section');
+
+// ul create
+let creatUl = document.createElement('ul');
+
+// ul ke section er moddhe add
+creatSection.appendChild(creatUl);
+
+// first li
+let li1 = document.createElement('li');
+li1.innerText = 'football';
+
+// second li
+let li2 = document.createElement('li');
+li2.innerText = 'cricket';
+
+// third li
+let li3 = document.createElement('li');
+li3.innerText = 'badminton';
+
+// সব li ul এর ভিতরে add
+creatUl.appendChild(li1);
+creatUl.appendChild(li2);
+creatUl.appendChild(li3);
+
+// শেষে section কে body তে add
+document.body.appendChild(creatSection);
